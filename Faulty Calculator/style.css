@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 500px;
+    background-color: aqua;
+    padding: 20px;
+    border-radius: 10px;
+}
+header h1{
+    font-size: 25px;
+}
+.display{
+    margin: 20px 0;
+    border: ridge 10px black;
+}
+.display input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    font-size: 25px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.col-22{
+    width: 22%;
+}
+.button{
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    background-color: aliceblue;
+    border: ridge 5px black;
+    margin: 10px 0 0 0;
+}
+
+.operations{
+    margin: 10px 0;
+}

@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg,rgb(131, 246, 131),rgb(53, 0, 128));
+    display: grid;
+    place-items: center;
+}
+.card{
+    background-color: white;
+    width: 400px;
+    padding: 10px;
+}
+.add-item{
+    margin: 20px;
+    position: relative;
+}
+header {
+    background: linear-gradient(45deg,cyan,blue
+    ,magenta);
+    text-align: center;
+    background-position: 180px;    
+    -webkit-background-clip: text;
+    animation: textcolor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes textcolor {
+    100%{
+        background-position: 450px;
+    }
+}
+header h1{
+    font-size: 28px;
+    -webkit-text-fill-color: transparent;
+
+}
+#add-input{
+    padding: 10px 0 10px 10px;
+    width: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #5555552a;
+    border: 2px solid grey;
+}
+#add-input:focus{
+    outline-color: chocolate;
+}
+.add-item button{
+    /* padding: ; */
+    width: 20%;
+    height: 100%;
+    border-radius: 5px;
+    font-size: 1rem;
+    border: 2px solid grey;
+    border-left: none;
+    background-color: coral;
+    position: absolute;
+    right: 0;
+}
+.list{
+    padding: 10px 20px 0 20px;
+}
+.list li{
+    list-style: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 10px 0 20px 25px ;
+    position: relative;
+
+}
+.list li::before{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #5555552a;
+    border: 1px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    left: -30px;
+}
+
+.checked{
+    text-decoration: line-through;
+    color: grey;
+}
+li.checked::before {
+    background-color: coral;
+}
+
+.list i{
+    background-color: #5555552a;
+    padding: 5px;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+}
